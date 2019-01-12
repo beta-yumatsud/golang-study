@@ -1,0 +1,2 @@
+Golang is a greate programing language.
+Golang is very simple.
