@@ -63,5 +63,12 @@ func (_ FileSystemAvatar) GetAvatarURL(u ChatUser) (string, error) {
 			}
 		}
 	}
+	/*
+	matches, err := filepath.Glob(filepath.Join("avatars", u.UniqueID()+"*"))
+	if err != nil || len(matches) {
+		return "", ErrNoAvatrURL
+	}
+	return "/" + matches[0], nil
+	*/
 	return "", ErrNoAvatrURL
 }
